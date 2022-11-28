@@ -1,0 +1,3 @@
+[submodule "opensergo-proto/opensergo-proto"]
+	path = opensergo-proto/opensergo-proto
+	url = git@github.com:opensergo/opensergo-proto.git

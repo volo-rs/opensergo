@@ -1,0 +1,32 @@
+[package]
+name = "opensergo-proto"
+version = "0.0.1"
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Generated protobuf code for OpenSergo."
+documentation = "https://docs.rs/opensergo-proto"
+readme = "../README.md"
+categories = []
+keywords = ["opensergo", "volo"]
+include = ["/opensergo-proto", "/src", "build.rs", "volo.yml"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+volo.workspace = true
+volo-grpc.workspace = true
+
+anyhow.workspace = true
+async-trait.workspace = true
+futures.workspace = true
+prost.workspace = true
+tokio = { workspace = true, features = ["full"] }
+
+[build-dependencies]
+volo-build.workspace = true
